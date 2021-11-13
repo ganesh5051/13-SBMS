@@ -1,0 +1,19 @@
+package com.ganesh.beans;
+
+public class Car {
+	private IEngine eng1;
+	
+	public void setEng(IEngine eng) {
+		this.eng1 = eng1;
+	}
+	
+	public void drive() {
+		int engStatus = eng1.start();
+		if(engStatus == 1) {
+			System.out.println("Engine started");		
+		}else {
+			System.out.println("Engine not started");
+		}
+	}
+
+}
